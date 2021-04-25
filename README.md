@@ -5,7 +5,7 @@ A Browser extension translates hyperlink as desired formatted text.
 This currently adds just an `Copy Link as Markdown` in the context menu.  
 The link will be copied like `[text](url)`.
 
-![Screenshot](img/screenshot.jpg?raw=true "Hyperbel")
+![Screenshot](img/screenshot.png?raw=true "Hyperbel")
 
 
 ## Supported formats
