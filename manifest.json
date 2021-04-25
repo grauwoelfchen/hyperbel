@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Hyperbel",
+  "description": "A browser extention to exchange hyperlink format",
+  "homepage_url": "https://gitlab.com/grauwoelfchen/hyperbel",
+  "icons": {
+    "48": "img/icon-48.png",
+    "96": "img/icon-96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon-32.png",
+    "default_title": "Hypelbel",
+    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/.*$"],
+      "js": [
+        "src/hyperbel.js"
+      ]
+    }
+  ]
+}
